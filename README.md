@@ -22,10 +22,13 @@
 
 ## User Interfaces
 1. Main Menu
-<img width="337" alt="Screen Shot 2025-03-18 at 00 32 39" src="https://github.com/user-attachments/assets/f769baa1-160e-4b7a-94e8-090c11a15827" />        
+<img width="337" alt="Screen Shot 2025-03-18 at 00 32 39" src="https://github.com/user-attachments/assets/f769baa1-160e-4b7a-94e8-090c11a15827" />
+
 2. Adjust Brightness Tutorial
 <img width="337" alt="Screen Shot 2025-03-18 at 00 32 49" src="https://github.com/user-attachments/assets/c8c9df4e-86d3-4ebc-8880-994cce302d08" />
+
 3. Scanning Tips
 <img width="337" alt="Screen Shot 2025-03-18 at 00 34 18" src="https://github.com/user-attachments/assets/82c58862-e5a9-4a44-8d9b-4fd05766d6b1" />
+
 4. Scanning Process
 <img width="337" alt="Screen Shot 2025-03-18 at 00 35 59" src="https://github.com/user-attachments/assets/add78bb7-9b46-4e38-86de-a944fd9615a7" />
