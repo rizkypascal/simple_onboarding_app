@@ -18,7 +18,9 @@
 5. Then go to Run > Run 'app'
 
 ## Documentation
-1. Sequence Diagram -> open sequence_diagram.txt, copy the content, go to sequencediagram.org, paste the copied content there
+1. Sequence Diagram Script [sequence_diagram.txt](sequence_diagram.txt)
+2. Sequence Diagram ![technical-diagrams.png](technical-diagrams.png)
+3. Technical Assessment Consolidation [technical-assessment-consolidation.pdf](technical-assessment-consolidation.pdf)
 
 ## User Interfaces
 1. Main Menu
