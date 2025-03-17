@@ -1,5 +1,11 @@
 [versions]
 agp = "8.9.0"
+androidGifDrawable = "1.2.27"
+artifactid = "version"
+constraintlayout = "2.2.1"
+dotenvKotlin = "6.4.1"
+dotenvVaultKotlin = "0.0.2"
+fragmentKtx = "1.8.6"
 googleServices = "4.4.2"
 iproov = "10.3.0"
 kotlin = "2.0.21"
@@ -12,7 +18,13 @@ activityCompose = "1.8.0"
 composeBom = "2024.09.00"
 
 [libraries]
+android-gif-drawable = { module = "pl.droidsonroids.gif:android-gif-drawable", version.ref = "androidGifDrawable" }
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+artifactid = { module = "groupId:artifactId", version.ref = "artifactid" }
+dotenv-kotlin = { module = "com.cdimascio:dotenv-kotlin", version.ref = "dotenvKotlin" }
+dotenv-vault-kotlin = { module = "com.github.dotenv-org:dotenv-vault-kotlin", version.ref = "dotenvVaultKotlin" }
 google-services = { module = "com.google.gms:google-services", version.ref = "googleServices" }
 iproov = { module = "com.iproov.sdk:iproov", version.ref = "iproov" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

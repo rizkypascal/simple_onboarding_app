@@ -1,16 +1,29 @@
+import java.util.Properties
+
 plugins {
+    id("kotlin-kapt")
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
+    val apiKey: String
+    val apiSecret: String
+    val baseUrl: String
+    val fuelUrl: String
+
+    apiKey = (project.findProperty("API_KEY") ?: "").toString()
+    apiSecret = (project.findProperty("API_SECRET") ?: "").toString()
+    baseUrl = (project.findProperty("BASE_URL") ?: "").toString()
+    fuelUrl = (project.findProperty("FUEL_URL") ?: "").toString()
+
     namespace = "com.example.simpleonboardingapp"
     compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.simpleonboardingapp"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -26,6 +39,12 @@ android {
                 "proguard-rules.pro"
             )
         }
+        debug {
+            buildConfigField("String", "API_KEY", "\"${apiKey}\"")
+            buildConfigField("String", "API_SECRET", "\"${apiSecret}\"")
+            buildConfigField("String", "BASE_URL", "\"${baseUrl}\"")
+            buildConfigField("String", "FUEL_URL", "\"${fuelUrl}\"")
+        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -35,12 +54,20 @@ android {
         jvmTarget = "11"
     }
     buildFeatures {
-        compose = true
+        viewBinding = true
+        dataBinding = true
+        buildConfig = true
     }
 }
 
 dependencies {
+    implementation(libs.dotenv.vault.kotlin)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.android.gif.drawable)
+    implementation(libs.androidx.constraintlayout)
     implementation(libs.iproov)
+    implementation(group = "com.iproov.android-api-client", name = "kotlin-fuel", version = "3.0.0")
+    implementation(group = "com.iproov.android-api-client", name = "kotlin-common", version = "3.0.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

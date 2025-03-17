@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Simple Onboarding App</string>
+    <string name="enrol_gpa">Begin Scan</string>
+    <string name="need_scan">Next we need to scan your face</string>
+    <string name="instruction_title">Let\'s make your face scan a success!</string>
+    <string name="instruction_first">1. Turn up your screen brightness. Need help?</string>
+    <string name="instruction_second">2. Review our scanning tips</string>
+    <string name="instruction_end">To learn about our accessibility features, click here.</string>
+    <string name="error">Error</string>
+    <string name="failed_to_get_token">Failed to get token.</string>
+    <string name="success">Success</string>
+    <string name="canceled">Canceled</string>
+    <string name="iproov_logo">iProov Logo</string>
+    <string name="scanning_tips">Scanning Tips</string>
+    <string name="username_hint">Your Username (for testing)</string>
+    <string name="username_cannot_empty">Username cannot be empty</string>
 </resources>
